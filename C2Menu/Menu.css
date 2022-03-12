@@ -1,0 +1,16 @@
+/*
+    https://jsfiddle.net/y6h4ekuc/1/
+*/
+
+#menu {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+
+#menu_top{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

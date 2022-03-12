@@ -1,0 +1,15 @@
+.class_new {
+  color: red;
+}
+
+#menu_box {
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  box-shadow: 0px 1px 3px rgba(25, 25, 25, 0.4);
+  background: var(--opa);
+  transition: background 2s;
+  padding: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+/* box-sizing: border-box;
+*/
+.people_faces{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--opa);
+  transition: background 2s;
+  border-bottom: 1px dotted #dddddd;
+}

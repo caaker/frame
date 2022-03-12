@@ -1,0 +1,23 @@
+.people_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.people_box:hover{
+  background: #ffffff;
+}
+.people_box_title{
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+/*
+.menu_holder:hover{
+  border: 1px solid rgba(200, 200, 200, 1);
+  background: #ffffff;
+  color:  var(--color-blue);
+}*/

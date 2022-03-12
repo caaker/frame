@@ -1,0 +1,21 @@
+.link_div{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  width: 100%;
+  margin: 5px
+}
+.link_div:hover{
+  background-color: rgba(255, 255, 255, 0);
+}
+.link_image{
+  vertical-align: middle;
+  height: 16px;
+}
+.link_anchor{
+  vertical-align: middle;
+  font-size: 12px;
+  text-decoration: none;
+  color: #113c71;
+  margin: 0 0 0 4px;
+}

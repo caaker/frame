@@ -1,0 +1,36 @@
+#footer_hold {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(25, 25, 25, 0.5);
+}
+
+.footer_show{
+  height: 30px;
+  transition: height 2s; 
+}
+
+.footer_hide{
+  height: 0px;
+  transition: height 2s;
+}
+
+#footer_inner {
+  height: 100%;
+}
+
+.footer_style_90 {
+  background: var(--opa);
+  transition: background 2s;
+}
+
+.footer_item{
+  position: relative;
+  top: 6px;
+  margin-left: 20px;
+  color: rgba(128, 128, 128, .99);
+  text-decoration: none;
+  font-size:  12px;
+}

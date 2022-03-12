@@ -1,0 +1,12 @@
+.left-logo{
+ height:  var(--height) !important;
+ cursor: pointer;
+}
+#rotate_01{
+  transform: rotate(1deg);
+  transition: transform 2s;
+}
+#rotate_90{
+  transform: rotate(90deg);
+  transition: transform 2s;
+}

@@ -1,0 +1,7 @@
+.c1_copy {
+  filter: grayscale(100%);
+  opacity: .3;
+  float: right;
+  height: 100%;
+  cursor: pointer;
+}

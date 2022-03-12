@@ -1,0 +1,39 @@
+.box-inner{
+}
+.user-input{
+  font-size:  15px;
+  box-sizing: border-box;
+  display: block;
+  width: 310px;
+  height: 50px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.user-button{
+  font-size:  15px;
+  box-sizing: border-box;
+  display: block;
+  width: 310px;
+  height: 50px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0px;
+  color: white;
+  background-color: #000000;
+}
+.user-button:hover{
+  background-color: #222222;
+}
+.user-button:active{
+  background-color: #444444;
+}

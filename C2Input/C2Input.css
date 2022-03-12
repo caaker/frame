@@ -1,0 +1,31 @@
+.apex-input-div {
+  display: flex;
+  align-items:  center;
+  background-color: #eff2f5;
+  margin-left: var(--left);
+  border-radius: 33px;
+}
+
+.left_input {
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  outline-width: 0;
+  padding-left: 10px;
+  height: var(--height);
+}
+
+#left_input_show {
+}
+
+#left_input_hide {
+  display:  none;
+}
+
+/* MEDIA
+*/
+@media screen and (max-width: 400px) {
+  .left_input {
+    width: 80px;
+  }
+}

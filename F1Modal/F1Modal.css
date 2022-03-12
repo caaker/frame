@@ -1,0 +1,26 @@
+/* appears on the body tag to prevent scrolling */
+
+.modal-on {
+  overflow: hidden;
+}
+
+.modal_hold {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10001;
+}
+
+.onModal {
+}
+
+.offModal {
+  display: none;
+}

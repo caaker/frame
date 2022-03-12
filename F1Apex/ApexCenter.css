@@ -1,0 +1,26 @@
+.apex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+.apex-option {
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+  margin-left: var(--left);
+  padding: 9px 0px;
+  cursor: pointer;
+}
+.apex-option-on {
+  border-bottom: 2px solid var(--color-blue);
+  color:  var(--color-blue) !important;
+}
+
+/* MEDIA
+*/
+@media screen and (max-width: 701px) {
+  .apex-center {
+    display:  none;
+  }
+}

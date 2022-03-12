@@ -1,0 +1,25 @@
+#page-people{
+  box-sizing: border-box;
+  height: 100%;
+  width:  600px;
+}
+#people-pad{
+  box-sizing: border-box;
+  height: 50px;
+  background: white;
+  opacity: 0;
+}
+
+/* move
+*/
+@media screen and (max-width: 701px) {
+  #page-people {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 301px) {
+  #page-people {
+    width: 301px;
+  }
+}

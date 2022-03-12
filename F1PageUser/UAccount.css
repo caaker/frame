@@ -1,0 +1,77 @@
+/**
+**/
+
+#user-name{
+  margin: 20px 0px 0px 0px; 
+  font-size: 30px;
+  font-weight: bold;
+}
+#user-email{
+  margin: 10px 0px 0px 0px;
+}
+#user-location{
+  margin: 10px 0px 0px 0px;
+}
+
+/**
+**/
+
+
+/*
+  Put back later when page grows
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
+*/
+
+
+#user-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;    
+}
+#user-container-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding:  20px;
+  width:  310px;
+  height:  100%;
+  background: var(--opa);
+  transition: background 2s;
+
+  box-shadow:   0px 1px 3px rgba(25, 25, 25, 0.4);    
+  border-radius: 4px;
+}
+#user-image {
+    position:relative;
+    top: 2px;
+    left: 3px;
+    width: 100px;
+    height:  100px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+#user-image-wrapper {
+    width: 110px;
+    border-radius: 55px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+}
+#user-button{
+  border: none;
+  margin: 20px 0px 0px 0px;
+  padding: 7px;
+  width: 200px;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
