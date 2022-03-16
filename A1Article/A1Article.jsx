@@ -7,7 +7,7 @@ import Search          from './Search.js';
 
 export default () => {
   let articles = useSelector((state) => state.Articles.articles);
-  let search;
+  let search = useSelector((state) => state.SearchInput.current);
   function makeArticles() {
     if(articles) {
       if(search) {

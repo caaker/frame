@@ -1,0 +1,29 @@
+.modal_article_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:  relative;
+}
+
+.modal_article_input{
+  width: 310px;
+  height: 30px;
+
+  box-sizing: border-box;
+  margin: 5px 10px 5px 10px;
+  padding: 0px 40px 0px 10px;
+
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaaaaa;
+
+  background-color: #ffffff;
+}
+
+
+#z_icon_check{
+  font-size: 18px;
+  position:  absolute;
+  right: 5%;
+}

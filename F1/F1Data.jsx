@@ -38,6 +38,7 @@ export default () => {
         console.error('DEBUG: DATA: articles: ');
       });
   }
+
   // later fetch messages from the database
   function getMessages() {
     dispatch({type: 'initializePeople', people: config_people});

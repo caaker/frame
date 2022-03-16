@@ -8,7 +8,6 @@ import Modal             from  './f-modal';
 import Articles          from  './a-articles';
 
 // app - 2
-import PeopleInput       from  './a-people-input';
 import People            from  './a-people';
 
 const combiner = {
@@ -19,11 +18,10 @@ const combiner = {
   ...WebSocket,
   ...Modal,
 
-  // app - 1
-  ...PeopleInput,
+  // app - people
   ...People,
 
-  // app - 2
+  // app - articles
   ...Articles,
 
   // test
@@ -32,6 +30,3 @@ const combiner = {
 
 import {combineReducers} from 'redux';
 export default combineReducers(combiner);
-
-// deprecate
-// ...Friends

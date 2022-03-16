@@ -1,4 +1,5 @@
-/* appears on the body tag to prevent scrolling */
+/* appears on the body tag to prevent scrolling while the modal is active
+*/
 
 .modal-on {
   overflow: hidden;

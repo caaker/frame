@@ -6,7 +6,7 @@ import ImageCircle from '../C0Images/ImageCircle.jsx';
 export default (props) => {
   return (
     <div className='people_box'>
-      <ImageCircle src={props.src} />
+      <ImageCircle key={props.id} src={props.src} />
       <p className='people_box_title'>{props.name}</p>
     </div>
   );

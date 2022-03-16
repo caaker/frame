@@ -1,28 +1,27 @@
 import './PeopleConvo.css';
 import React           from         'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default (props) => {
   const dispatch = useDispatch();
+  const people = useSelector((state) => state.People.people);
+  const messages = [];
 
-  let messages = props.people[0].messages;
-
-  let conversation;
-
-  conversation = messages.map((val, index)=>{
-    val = val.message;
-    const prefix = val.slice(0,1);
-    val = val.slice(2);
-    if(prefix === 'L') {
+  const conversation = messages.map((val, index)=>{
+    let left = true;
+    if(left) {
       return <p key={index} className='sentenceL'>{val}</p>;
     }
-    if(prefix === 'R') {
-      return <p key={index} className='sentenceR'>{val}</p>;
-    }
+    return <p key={index} className='sentenceR'>{val}</p>;
   });
+
   return (
     <div id="people-convo">
+
+
       {conversation}
+
+
     </div>
   );
 };

@@ -8,26 +8,20 @@ export default () => {
   const dispatch = useDispatch();
   const current = useSelector((state) => state.PeopleInput.current);
   const socket = useSelector((state) => state.WebSocket.socket);
-  // const email = useSelector((state) => state.User.current.email);
-  const email_from = 'test_from@test.com';
-  const email_to = 'test_to@test.com';
 
   function onSend() {
-
     event.preventDefault();
 
     const messageServer = {
       type: 'echo',
       message: current,
-      from: email_from,
-      to: email_to
+      from: 'foo.com',
+      to: 'moo.com'
     };
-    socket.send(JSON.stringify(messageServer));
 
-    const messageRedux = 'R:' + current;
-    if(messageRedux) {
-      dispatch({type: 'addMessage', message: messageRedux});
-    }
+    // send message to the server and to redux
+    socket.send(JSON.stringify(messageServer));
+    dispatch({type: 'addMessage', message: messageServer});
 
     // controlled form, set to empty on send
     dispatch({type: 'updatePeopleInput', current: ''});

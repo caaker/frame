@@ -5,8 +5,7 @@ export default (props) => {
   const dispatch = useDispatch();
   function clickHandler() {
 
-    // dispatch to modal
-    // dispatch
+    dispatch({type: 'toggleOn'});
 
     // toggle the MenuPage off
     dispatch({type: 'toggleMenuPageOff'});

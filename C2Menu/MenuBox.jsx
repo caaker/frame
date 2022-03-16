@@ -41,9 +41,6 @@ export default () => {
       {admin && <MenuBoxItem name='People'>
         <SVGPeople className='class_new'/>
       </MenuBoxItem>}
-      {admin && <MenuBoxItem name='JRE'>
-        <SVGPeople className='class_new' />
-      </MenuBoxItem>}
     </span>
   );
 };

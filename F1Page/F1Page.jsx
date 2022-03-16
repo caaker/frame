@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 // app pages
 import AppArticle from             '../A1Article/A1Article.jsx';
 import A1People  from              '../A1People/A1People.jsx';
-import JRE  from                   '../A1JRE/A1JRE.jsx';
 
 
 // framework pages
@@ -22,10 +21,6 @@ export default () => {
         {(page === 'User')                   &&   <F1User/>}
         {(page === 'Articles')               &&   <AppArticle/>}
         {(page === 'People')                 &&   <A1People/>}
-
-
-        {(page === 'JRE')                    &&   <JRE/>}
-
 
       </div>
     </div>

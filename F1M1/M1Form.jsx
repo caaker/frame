@@ -3,7 +3,7 @@ import React                         from 'react';
 import { useSelector, useDispatch }  from 'react-redux';
 
 import M1FormInputs                  from './M1FormInputs.jsx';
-// import M1FormButton                  from './M1FormButton.jsx';
+import M1FormButton                  from './M1FormButton.jsx';
 
 import submit                        from './Z1Submit.js';
 
@@ -11,6 +11,10 @@ export default () => {
   const dispatch = useDispatch();
   const data_form = useSelector((state) => state.ArticleForm) || {};
   const config = useSelector((state) => state.Modal.config);
+
+  function onTest() {
+    dispatch({type: 'testArticleForm'});
+  }
 
   function onSubmit() {
     event.preventDefault();
@@ -36,14 +40,9 @@ export default () => {
   }
 
   return (
-    <form autocomplete="off" className = 'modal-form' onSubmit = {onSubmit}>
-
+    <form autoComplete="off" className = 'modal-form' onSubmit = {onSubmit}>
       <M1FormInputs />
-
-
       <M1FormButton config={config}/>
-
-
     </form>
   );
 

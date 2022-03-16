@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './C1Input.css';
+import './C2Search.css';
 
 export default () => {
 

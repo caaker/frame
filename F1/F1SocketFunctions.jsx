@@ -1,12 +1,3 @@
-export const sendMessage = function (event) {
-  const json_string = event.data;
-  if(json_string) {
-    let obj = JSON.parse(json_string);
-    let message = 'L:' + obj.message;
-    dispatch({type: 'addMessage', message: message});
-  }
-};
-
 export const sendFingerPrint = function(socket) {
   sendType('fingerprint', window.navigator.userAgent, socket);
 };
@@ -19,4 +10,12 @@ export const sendType = function(type, message, socket) {
   socket.send(JSON.stringify(send));
 };
 
-export default {sendMessage, sendFingerPrint, sendType};
+export const parseMessages = function(json) {
+  let obj = JSON.parse(json);
+  if(obj.type === 'tweet') {
+
+  }
+  return obj;
+};
+
+export default {parseMessages, sendFingerPrint, sendType};
