@@ -19,7 +19,7 @@ export default () => {
         // console.logD('DEBUG: DATA: user: ' + user, 'green');
         if(user) {
           dispatch({type: 'initializeUser', current: user});
-          socket.send({type: 'initializeUser', current: user});
+          socket.send({type: 'authenticate', current: user});
         }
       }).catch(()=>{});
   }

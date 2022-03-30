@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ImageLogo.css';
 
-export default function (props) {
+export default function(props) {
   const logo = props.path || '/images/favicon-optimized.svg';
   const [on, toggle] = useState(true);
   function onClick() {

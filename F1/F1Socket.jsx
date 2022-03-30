@@ -19,7 +19,6 @@ export default () => {
   socket.addEventListener('message', (event) => {
     let obj = parseMessages(event.data);
     console.logD('DEBUG: WEBSOCKET: message: ' + obj.type, 'green');
-
   });
 
   return null;

@@ -9,7 +9,7 @@ import store        from './_redux/store';
 // Frame Modules - top component
 import F1           from './F1/F1.jsx';
 
-console.logD('DEBUG: L1 : in: |---------|---------|---------|--------|>');
+console.logD('DEBUG: L1 : in: |---------|---------|---------|--------|');
 
 ReactDOM.render(
   <Provider store={store}>
