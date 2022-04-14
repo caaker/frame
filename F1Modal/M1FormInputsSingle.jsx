@@ -1,6 +1,6 @@
 import React from 'react';
-import { useSelector, useDispatch }   from 'react-redux';
-import SVGCheck                     from '../C0Vectors/SVGCheck.jsx';
+import { useSelector, useDispatch } from 'react-redux';
+import SVGCheck from '../C0Vectors/SVGCheck.jsx';
 
 export default (props) => {
   return (

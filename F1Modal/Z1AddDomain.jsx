@@ -1,6 +1,4 @@
-import URL                         from '../../arc/class.URL.js';
-
-// import { useDispatch }             from 'react-redux'; // throws error, pass it in instead
+import URL from '../../arc/class.URL.js';
 
 export default (name, value, dispatch) => {
   if(name === 'link') {

@@ -4,7 +4,7 @@ import './ArticleBar.css';
 
 import C3BarAdmin     from    '../C3BarAdmin/C3BarAdmin.jsx';
 import C2Copy         from    '../C2Copy/C2Copy.jsx';
-import C1Favicon      from    '../C1Favicon/C1Favicon.jsx';
+import C1Favicon      from    '../C0Images/ImageFavicon.jsx';
 
 export default (props) => {
   const email = useSelector((state) => state.User.current.email);

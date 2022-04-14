@@ -21,16 +21,15 @@ export default () => {
   }
 
   return (
-
     <span>
       <M10 valid = {data.link.valid}     value = {data.link.value}    onChange={onChange} className = 'modal_article_input' placeholder="link"    name="link" />
       { admin &&
       <span>
-        <M10 valid = {data.image.valid}    value = {data.image.value}   onChange={onChange} className = 'modal_article_input' placeholder="image"   name="image" />
-        <M10 valid = {data.title.valid}    value = {data.title.value}   onChange={onChange} className = 'modal_article_input' placeholder="title"   name="title" />
-        <M10 valid = {data.summary.valid}  value = {data.summary.value} onChange={onChange} className = 'modal_article_input' placeholder="summary" name="summary" />
-        <M10 valid = {data.tag.valid}      value = {data.tag.value}     onChange={onChange} className = 'modal_article_input' placeholder="tag"     name="tag" />
-        <M10 valid = {data.domain.valid}   value = {data.domain.value}  onChange={onChange} className = 'modal_article_input' placeholder="domain"  name="domain" readonly = {true} />
+        <M10 valid={data.image.valid}    value = {data.image.value}   onChange={onChange} className = 'modal_article_input' placeholder="image"   name="image" />
+        <M10 valid={data.title.valid}    value = {data.title.value}   onChange={onChange} className = 'modal_article_input' placeholder="title"   name="title" />
+        <M10 valid={data.summary.valid}  value = {data.summary.value} onChange={onChange} className = 'modal_article_input' placeholder="summary" name="summary" />
+        <M10 valid={data.tag.valid}      value = {data.tag.value}     onChange={onChange} className = 'modal_article_input' placeholder="tag"     name="tag" />
+        <M10 valid={data.domain.valid}   value = {data.domain.value}  onChange={onChange} className = 'modal_article_input' placeholder="domain"  name="domain" readonly = {true} />
       </span>
       }
     </span>

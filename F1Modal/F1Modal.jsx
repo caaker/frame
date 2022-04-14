@@ -1,8 +1,7 @@
 import React                                from   'react';
 import { useSelector, useDispatch }         from   'react-redux';
-
 import './F1Modal.css';
-import F1M1                                 from   '../F1M1/M1.jsx';
+import F1M1                                 from   './M1.jsx';
 
 export default () => {
 
@@ -24,7 +23,7 @@ export default () => {
   }
 
   return (
-    <div onClick={offModalClick} className = {on === true ? 'modal_hold onModal' : 'modal_hold offModal'}>
+    <div onClick={offModalClick} className={on === true ? 'modal_hold onModal' : 'modal_hold offModal'}>
       <F1M1/>
     </div>
   );

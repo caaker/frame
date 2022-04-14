@@ -6,7 +6,7 @@ import { useSelector }    from     'react-redux';
 import F1Apex             from     '../F1Apex/Apex.jsx';
 import F1Page             from     '../F1Page/F1Page.jsx';
 import F1Footer           from     '../F1Footer/F1Footer.jsx';
-import F1Modal            from     '../F1M/F1Modal.jsx';
+import F1Modal            from     '../F1Modal/F1Modal.jsx';
 
 import F1Data             from     './F1Data.jsx';
 import F1Socket           from     './F1Socket.jsx';
