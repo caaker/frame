@@ -4,26 +4,27 @@ import ArticleBar from './ArticleBar.jsx';
 import _arc from '../../arc/arc.js';
 
 export default (props) => {
-  const hash = _arc.makeAnchorHash(props.data.title);
+  const article = props.article;
+  const hash = _arc.makeAnchorHash(article.title);
   return (
-    <article id={hash} className='medd_article'>
-      <a className="medd_link" href={props.data.link} target="_blank">
-        <img className="medd_link_image" src={props.data.image}></img>
+    <article id={hash} className='__article'>
+      <a className="article_link" href={article.link} target="_blank">
+        <img className="article_link_image" src={article.image}></img>
       </a>
 
-      <p className="medd_heading">
-        <a className="medd_heading_link" href={props.data.link} target="_blank">{props.data.title}</a>
+      <p className="article_heading">
+        <a className="article_heading_link" href={article.link} target="_blank">{article.title}</a>
       </p>
-      <p className="medd_summary">
-        {props.data.summary}
+      <p className="article_summary">
+        {article.summary}
       </p>
-      <p className="medd_tag">
-        {props.data.tag}
+      <p className="article_tag">
+        {article.tag}
       </p>
-      <p className="medd_domain">
-        {props.data.domain}
+      <p className="article_domain">
+        {article.domain}
       </p>
-      <ArticleBar data={props.data}/>
+      <ArticleBar article={article}/>
     </article>
   );
 };

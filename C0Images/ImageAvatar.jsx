@@ -5,8 +5,8 @@ import './ImageAvatar.css';
 export default (props) => {
   console.logD('DEBUG: L4 : F1-Apex-Right-Avatar');
   const dispatch = useDispatch();
-  const page = useSelector((state)=> state.MenuPage.current);
-  const UserCurrent = useSelector((state)=> state.User.current);
+  const page = useSelector((state) => state.MenuPage.current);
+  const UserCurrent = useSelector((state) => state.User.current);
   function clicked() {
     if(page !== 'User') {
       dispatch({type: 'updateMenuPage', current: 'User' });

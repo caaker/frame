@@ -8,7 +8,7 @@ export default (props) => {
   const messages = [];
 
   const conversation = messages.map((val, index)=>{
-    let left = true;
+    const left = true;
     if(left) {
       return <p key={index} className='sentenceL'>{val}</p>;
     }
@@ -18,9 +18,7 @@ export default (props) => {
   return (
     <div id="people-convo">
 
-
       {conversation}
-
 
     </div>
   );

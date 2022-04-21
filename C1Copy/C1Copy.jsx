@@ -1,5 +1,5 @@
 import React from 'react';
-import './C2Copy.css';
+import './C1Copy.css';
 import arc from '../../arc/arc.js';
 
 import SVGCopy from '../C0Vectors/SVGCopy.jsx';

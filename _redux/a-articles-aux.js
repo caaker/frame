@@ -1,3 +1,4 @@
+// initial state
 export const initial_state = {
   link:{
     value:''
@@ -49,7 +50,7 @@ export const test_state = {
   valid: true
 };
 
-// create a map for objets
+// create a map for objects
 export const makeData = (raw) => {
   console.log(raw);
   const ret = {

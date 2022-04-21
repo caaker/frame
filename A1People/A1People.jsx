@@ -7,10 +7,7 @@ import { connect, useSelector }     from         'react-redux';
 
 export default () => {
   const people = useSelector((state) => state.People.people);
-  const messages = people.map((val) => val.messages);
   console.logD('DEBUG: L3 : F1-Page-People ');
-  console.log('People', people);
-  console.log('Messages', messages);
   return (
     <div id="page-people">
       <div id="people-pad"></div>

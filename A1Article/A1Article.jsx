@@ -15,9 +15,9 @@ export default () => {
           return Search(val, search);
         });
       }
-      articles = articles.map((val, index) => {
-        val.index = index;
-        return <Article key={index} data={val}/>;
+      articles = articles.map((article, index) => {
+        article.index = index;
+        return <Article key={index} article={article}/>;
       });
       return articles;
     }
