@@ -22,8 +22,21 @@
 }
 
 
+.modal_admin_inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #z_icon_check{
   font-size: 18px;
   position:  absolute;
   right: 5%;
+}
+
+.c1_copy_modal{
+  opacity: .3;
+  float: right;
+  cursor: pointer;
 }

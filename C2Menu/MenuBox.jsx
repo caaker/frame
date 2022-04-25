@@ -1,16 +1,18 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './MenuBox.css';
 
-//
+// items
 import MenuBoxItem       from './MenuBoxItem.jsx';
 import MenuBoxItemOdd    from './MenuBoxItemOdd.jsx';
 
-// Icons phenomenal
+// icons
 import SVGUser         from '../C0Vectors/SVGUser.jsx';
 import SVGHome         from '../C0Vectors/SVGHome.jsx';
 import SVGAdd          from '../C0Vectors/SVGAdd.jsx';
 import SVGPeople       from '../C0Vectors/SVGPeople.jsx';
+
+// css
+import './MenuBox.css';
 
 export default () => {
   const dispatch = useDispatch();
