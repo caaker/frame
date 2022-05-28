@@ -11,4 +11,3 @@ const WebSocket = (state = {socket: false, fingerprint: false}, action) => {
 export default {
   WebSocket
 };
-

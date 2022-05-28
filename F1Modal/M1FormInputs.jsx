@@ -25,7 +25,7 @@ export default () => {
   const title = !!data.title.value;
   return (
     <span>
-      <M10 valid = {data.link.valid}     value = {data.link.value}    onChange={onChange} className = 'modal_article_input' placeholder="link"    name="link" />
+      <M10 valid = {data.link.valid}      value = {data.link.value}    onChange={onChange} className = 'modal_article_input' placeholder="link"    name="link" />
       { admin &&
       <div className='modal_admin_inputs'>
         <M10 valid={data.image.valid}     value = {data.image.value}   onChange={onChange} className = 'modal_article_input' placeholder="image"   name="image" />

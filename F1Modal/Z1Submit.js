@@ -19,19 +19,21 @@ exp.post = function(state, dispatch) {
     });
 };
 
-exp.put_old = function(state) {
+exp.put = function(state, dispatch) {
+  console.log(state);
   let _id = encodeURIComponent(state._id);
   const options = {
     headers: {'Content-Type': 'application/json'},
     method: 'PUT',
     body: JSON.stringify(state)
   };
-  fetch('/links/put/' + _id, options )
+  fetch('/articles/put/' + _id, options)
     .then((response) => {
       return response.json();
     })
     .then((response) => {
-      console.log('DEBUG: /links/put ', response);
+      console.log('DEBUG: /articles/put ', response);
+      dispatch({type: 'updateArticle', new_article: response});
     })
     .catch((error) => {
       console.error('DEBUG: fetch/PUT error', error);

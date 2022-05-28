@@ -5,10 +5,13 @@ import config_people        from '../F1-Customize/config_people.js';
 export default () => {
   console.logD('DEBUG: L2 : F1-Data');
   const dispatch = useDispatch();
+
+  // get user data, article data, and messages ( future )
   getUser();
   getArticles();
   getMessages();
 
+  //
   function getUser() {
     const options = { credentials: 'include' };
     fetch('/users/get', options)
@@ -21,7 +24,9 @@ export default () => {
           dispatch({type: 'initializeUser', current: user});
           socket.send({type: 'authenticate', current: user});
         }
-      }).catch(()=>{});
+      }).catch((err) => {
+        console.error('DEBUG: DATA: user: ');
+      });
   }
 
   function getArticles() {
@@ -34,7 +39,7 @@ export default () => {
         // console.logD('DEBUG: DATA: articles: ' + (articles.length > 10), 'green');
         articles.reverse();
         dispatch({type: 'initializeArticles', articles: articles});
-      }).catch(()=>{
+      }).catch((err) => {
         console.error('DEBUG: DATA: articles: ');
       });
   }

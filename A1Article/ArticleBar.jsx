@@ -1,12 +1,10 @@
-import React from 'react';
-import { useSelector, disptach } from 'react-redux';
-import './ArticleBar.css';
-
-
-import C1Copy         from    '../C1Copy/C1Copy.jsx';
-import C1Edit         from    '../C1Edit/C1Edit.jsx';
-import C1Delete       from    '../C1Delete/C1Delete.jsx';
-import ImageFavicon   from    '../C0Images/ImageFavicon.jsx';
+import                          './ArticleBar.css';
+import React            from    'react';
+import { useSelector }  from    'react-redux';
+import C1Copy           from    '../C1Copy/C1Copy.jsx';
+import C1Edit           from    '../C1Edit/C1Edit.jsx';
+import C1Delete         from    '../C1Delete/C1Delete.jsx';
+import ImageFavicon     from    '../C0Images/ImageFavicon.jsx';
 
 export default (props) => {
   const article = props.article;

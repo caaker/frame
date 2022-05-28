@@ -1,9 +1,11 @@
+// css
+import                              './F1.css';
+
 // npm modules
 import React              from      'react';
 import { useSelector }    from      'react-redux';
 
 // repo files
-import                              './F1.css';
 import F1Apex             from      '../F1Apex/Apex.jsx';
 import F1Page             from      '../F1Page/F1Page.jsx';
 import F1Footer           from      '../F1Footer/F1Footer.jsx';
@@ -18,6 +20,8 @@ export default () => {
   const page = useSelector( state => state.MenuPage.current );
   return (
     <div id="app_hold">
+
+      {/* Application pulls much data on load into redux */}
       <F1Data />
       <F1Socket />
       <F1Apex />

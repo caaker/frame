@@ -52,8 +52,8 @@ export const test_state = {
 
 // create a map for objects
 export const makeData = (raw) => {
-  console.log(raw);
   const ret = {
+    // _id: raw._id,
     link: {
       value: raw.link,
       valid: true
@@ -78,9 +78,13 @@ export const makeData = (raw) => {
       value: raw.domain,
       valid: true
     },
+    _id: {
+      value: raw._id,
+      valid: true
+    },
     valid: true
   };
-
+  // console.log('redux', ret);
   return ret;
 };
 

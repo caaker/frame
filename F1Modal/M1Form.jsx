@@ -3,7 +3,7 @@ import React                          from 'react';
 import { useSelector, useDispatch }   from 'react-redux';
 import M1FormInputs                   from './M1FormInputs.jsx';
 import M1FormButton                   from './M1FormButton.jsx';
-import submit                         from './Z1Submit.js';
+import Submit                         from './Z1Submit.js';
 
 
 export default () => {
@@ -11,6 +11,7 @@ export default () => {
   const data_form = useSelector((state) => state.ArticleForm) || {};
   const config = useSelector((state) => state.Modal.config);
 
+  // implement ?
   function onTest() {
     dispatch({type: 'testArticleForm'});
   }
@@ -20,8 +21,13 @@ export default () => {
     if(data_form.valid) {
       dispatch({type: 'clearArticleForm'});
       dispatch({type: 'toggleModalOff'});
-      submit.post(makeObject(), dispatch);
+      if(config) {
+        Submit.put(makeObject(), dispatch);
+      } else {
+        Submit.post(makeObject(), dispatch);
+      }
       alert('Form submitted.  Thank you.');
+
     } else {
       alert('Form has errors.  Please correct.');
     }
@@ -35,6 +41,8 @@ export default () => {
     res.summary = data_form.summary.value;
     res.tag = data_form.tag.value;
     res.domain = data_form.domain.value;
+    res._id = data_form._id.value;
+    console.log(res);
     return res;
   }
 
