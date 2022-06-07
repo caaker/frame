@@ -53,7 +53,6 @@ export const test_state = {
 // create a map for objects
 export const makeData = (raw) => {
   const ret = {
-    // _id: raw._id,
     link: {
       value: raw.link,
       valid: true
@@ -78,8 +77,14 @@ export const makeData = (raw) => {
       value: raw.domain,
       valid: true
     },
+
+    // _id and index to not need validation, but are needed
     _id: {
       value: raw._id,
+      valid: true
+    },
+    index: {
+      value: raw.index,
       valid: true
     },
     valid: true

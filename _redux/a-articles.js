@@ -1,34 +1,38 @@
 import {initial_state, test_state, makeData, test} from './a-articles-aux';
 
-// holds json data for all articles, similar to digg.com or news.google.com
+// holds json data for all articles
 const Articles = (state = {articles: false}, action) => {
   let newState = { ...state };
   switch(action.type) {
 
-    // called by initial page load by Data component - read them
+    // called by initial page load by Data component
     case 'initializeArticles':
       newState.articles = action.articles;
       return newState;
 
-    // called by the delete SVG component - delete it
+    // called by the delete SVG component
     case 'deleteArticle':
-      const clone = [...newState.articles];
-      clone.splice(action.index, 1);
-      newState.articles = clone;
+      const newArticles = [...newState.articles];
+
+      // deletes 1 item from newArticles
+      newArticles.splice(action.index, 1);
+      newState.articles = newArticles;
       return newState;
 
-    // called by F1Modal Submission function - post it
+    // called by F1Modal Submission function
     case 'addArticle':
-      const clone1 = [...newState.articles];
-      clone1.unshift(action.new_article);
-      newState.articles = clone1;
+      const newArticles1 = [...newState.articles];
+
+      // adds 1 article to the front of the array
+      newArticles1.unshift(action.new_article);
+      newState.articles = newArticles1;
       return newState;
 
-    // called by F1Modal Submission function - update it
+    // called by F1Modal Submission function
     case 'updateArticle':
-      const clone2 = [...newState.articles];
-      clone2.unshift(action.new_article);
-      newState.articles = clone2;
+      const newArticles2 = [...newState.articles];
+      newArticles2.splice(action.index, 1, action.new_article);
+      newState.articles = newArticles2;
       return newState;
   }
 
@@ -84,3 +88,7 @@ export default {
   ArticleForm,
   SearchInput
 };
+
+
+      // newArticles2.splice(action.index, 1);                       // delete the updated article
+      // newArticles2.splice(action.index, 0, action.new_article)    // insert the updated article

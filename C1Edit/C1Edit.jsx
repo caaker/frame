@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import SVGEdit from '../C0Vectors/SVGEdit.jsx';
 
 export default (props) => {
-
   const dispatch = useDispatch();
   function editClicked() {
     dispatch({type: 'toggleOn', config: true});

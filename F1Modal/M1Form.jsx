@@ -21,8 +21,12 @@ export default () => {
     if(data_form.valid) {
       dispatch({type: 'clearArticleForm'});
       dispatch({type: 'toggleModalOff'});
+
+      // edit the article using put
       if(config) {
         Submit.put(makeObject(), dispatch);
+
+      // add the article using post
       } else {
         Submit.post(makeObject(), dispatch);
       }
@@ -33,6 +37,7 @@ export default () => {
     }
   }
 
+  // data_form should hold index
   function makeObject() {
     const res = {};
     res.link = data_form.link.value;
@@ -41,8 +46,14 @@ export default () => {
     res.summary = data_form.summary.value;
     res.tag = data_form.tag.value;
     res.domain = data_form.domain.value;
-    res._id = data_form._id.value;
-    console.log(res);
+
+    // for Edit / PUT only, a new article has no _id from MongoDB
+    if(data_form._id) {
+      res._id = data_form._id.value;
+    }
+    if(data_form.index) {
+      res.index = data_form.index.value;
+    }
     return res;
   }
 

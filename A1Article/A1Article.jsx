@@ -22,6 +22,21 @@ export default () => {
   let articles = useSelector((state) => state.Articles.articles);
   let search = useSelector((state) => state.SearchInput.current);
 
+  /*
+  articles is an object with these properties
+        domain
+        image
+        index
+        link
+        owner
+        summary
+        tag
+        timestamp
+        title
+        __v
+        _id
+  */
+
   // make articles by filtering via search criteria, and then mapping to Article component
   function makeArticles() {
     if(articles) {
@@ -38,8 +53,6 @@ export default () => {
     }
   }
 
-  // this is the article page, if hash is detected, wait 4 seconds and scroll
-  // this needs a better implementation, i.e. detect when page is loaded
   console.logD('DEBUG: L3 : F1-Page-Article ');
 
   // render the page with articles
